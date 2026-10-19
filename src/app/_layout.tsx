@@ -1,19 +1,19 @@
-import '@/global.css';
+import "@/global.css";
 
-import { Stack } from 'expo-router';
+import { Stack } from "expo-router";
 
 export default function RootLayout() {
   return (
     <Stack>
-      <Stack.Screen
-        name="index"
-        options={{
-          headerShown: true,
-          headerTitle: '',
+      <Stack.Screen  options={{
+          headerShown: false,
+          headerTitle: "",
           headerTransparent: true,
-          headerShadowVisible: false,
-        }}
+          headerShadowVisible: false
+      }}
+        name="index"
       />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
     </Stack>
   );
 }
